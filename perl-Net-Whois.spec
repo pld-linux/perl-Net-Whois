@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Net
 %define	pnam	Whois
-%include	/usr/lib/rpm/macros.perl
 Summary:	Net-Whois perl module
 Summary(pl):	Modu³ perla Net-Whois
 Name:		perl-Net-Whois
 Version:	1.9
-Release:	5
-
+Release:	6
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -22,7 +21,7 @@ Net-Whois - Get and parse "whois" data from InterNIC.
 Net-Whois - wsparcie dla us³ugi "whois".
 
 %prep
-%setup -q -n Net-Whois-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL

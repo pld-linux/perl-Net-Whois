@@ -2,9 +2,9 @@
 Summary:	Net-Whois perl module
 Summary(pl):	Modu³ perla Net-Whois
 Name:		perl-Net-Whois
-Version:	0.23
-Release:	3
-Copyright:	GPL
+Version:	1.9
+Release:	1
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Net/Net-Whois-%{version}.tar.gz
@@ -45,7 +45,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README.gz whois_dom
+%doc README.gz
 
 %{perl_sitelib}/Net/Whois.pm
 %{perl_sitearch}/auto/Net/Whois

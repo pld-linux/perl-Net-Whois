@@ -24,7 +24,7 @@ Net::Whois - wsparcie dla us³ugi "whois".
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %install

@@ -26,7 +26,7 @@ Net::Whois - wsparcie dla us³ugi "whois".
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install

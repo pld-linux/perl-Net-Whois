@@ -3,8 +3,8 @@
 %bcond_with	tests	# perform "make test" (uses network!)
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Net
-%define	pnam	Whois
+%define		pdir	Net
+%define		pnam	Whois
 Summary:	Net::Whois perl module
 Summary(pl):	Modu³ perla Net::Whois
 Name:		perl-Net-Whois

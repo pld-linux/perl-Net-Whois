@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Net
 %define	pnam	Whois
-Summary:	Net-Whois perl module
-Summary(pl):	Modu³ perla Net-Whois
+Summary:	Net::Whois perl module
+Summary(pl):	Modu³ perla Net::Whois
 Name:		perl-Net-Whois
 Version:	1.9
 Release:	6
@@ -15,10 +15,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Net-Whois - Get and parse "whois" data from InterNIC.
+Net::Whois - Get and parse "whois" data from InterNIC.
 
 %description -l pl
-Net-Whois - wsparcie dla us³ugi "whois".
+Net::Whois - wsparcie dla us³ugi "whois".
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}

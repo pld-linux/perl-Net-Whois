@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_with	tests	# perform "make test" (uses network!)
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Net
 %define	pnam	Whois
@@ -6,7 +10,8 @@ Summary(pl):	Modu³ perla Net::Whois
 Name:		perl-Net-Whois
 Version:	1.9
 Release:	7
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	c461a0f8991d9df848f66c4189971af7
@@ -29,10 +34,13 @@ Net::Whois - wsparcie dla us³ugi "whois".
 	INSTALLDIRS=vendor
 %{__make}
 
+%{?with_tests:%{__make} test}
+
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT

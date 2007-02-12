@@ -6,7 +6,7 @@
 %define		pdir	Net
 %define		pnam	Whois
 Summary:	Net::Whois perl module
-Summary(pl):	Modu≥ perla Net::Whois
+Summary(pl.UTF-8):   Modu≈Ç perla Net::Whois
 Name:		perl-Net-Whois
 Version:	1.9
 Release:	8
@@ -23,8 +23,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Net::Whois - Get and parse "whois" data from InterNIC.
 
-%description -l pl
-Net::Whois - wsparcie dla us≥ugi "whois".
+%description -l pl.UTF-8
+Net::Whois - wsparcie dla us≈Çugi "whois".
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}

@@ -6,7 +6,7 @@
 %define		pdir	Net
 %define		pnam	Whois
 Summary:	Net::Whois perl module
-Summary(pl.UTF-8):   Moduł perla Net::Whois
+Summary(pl.UTF-8):	Moduł perla Net::Whois
 Name:		perl-Net-Whois
 Version:	1.9
 Release:	8

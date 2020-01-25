@@ -4,7 +4,6 @@
 
 %define		pdir	Net
 %define		pnam	Whois
-%include	/usr/lib/rpm/macros.perl
 Summary:	Net::Whois perl module
 Summary(pl.UTF-8):	Moduł perla Net::Whois
 Name:		perl-Net-Whois

@@ -8,7 +8,7 @@ Summary:	Net::Whois perl module
 Summary(pl.UTF-8):	Moduł perla Net::Whois
 Name:		perl-Net-Whois
 Version:	1.9
-Release:	9
+Release:	10
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
